@@ -4,7 +4,7 @@ title:  "Let's get rolling"
 num: 1
 ---
 
-Basic rule of life: if you don't move, things are going to get pretty tough up the road... Now different creature and inventors found various way to solve that issue. To each hardware solution come a different software solutions; you don't control a car, a 4 leg robot or a rocket the same way. In this section we'll discover how to make your robot move and race for the stars. In this section, we will use this [setup](./assets/setup/setup_1.tar.gz) with varying circuits.
+Interstingly, once life appeared, it took ages for navigation to be (if not solved) at least tackled enough for life to move around. Once that was done, the rest followed pretty quickly relatively. To each hardware solution come a different software solutions; you don't control a car, a four leg robot or a rocket the same way. In this section, we will teach our robots how to move, hopefully quicker than life used to.
 
 <img src="./assets/marxbot.jpg" alt="picture of the marxbot" style="height:300px; float:right; margin:10px;">
 
@@ -46,7 +46,7 @@ end
 
 Pretty good. You can already use this formalism to get a better control over the robot. But we don't want to pilot our robots as a car (from the inside) we want to give him orders (from the outside). We'll see later on even better ways to command the robot. For now, we have more important issues, our robot is ... a bit blind.
 
-##b) Sensing: Invisible touch
+## b) Sensing: Invisible touch
 
 <img src="./assets/robot_proximity.png" alt="proximity sensor" style="float:right; margin:10px;">
 
@@ -140,11 +140,5 @@ end
 robot.wheels.set_velocity(leftSpeed, rightSpeed)
 ```
 
-Neato but ... hey, this is a rip off, it's only working if the shape is convex! Well, all intelligence has its down. But why not giving a perfect solution? :( Well, first of all, you could say please. Second, I got something better: a game (or research, if you find it more sexy). Sometimes there is not one clear solution and that's when there is competition. Which is super good for the bettering of the human knowledge. And also great to watch while getting some pop corn. Your job now is actually to better this behavior. Enough copy pasting (yep, we saw you!), now it's time to work it out! 
+Neato but ... hey, this is a rip off, it's only working if the shape is convex! Well, all intelligence has its down. But why not giving a perfect solution? :( Well, first of all, you could say please. Second, I got something better: a game (or research, if you find it more sexy). Sometimes there is not one clear solution and that's when there is competition. Which is super good for the bettering of the human knowledge. And also great to watch while getting some pop corn. Your job now is actually to better this behavior. 
 
-## e) Playing: Everybody race now!
-Did the joke on copy pasting work? Anyway... As said, your job is to think of a behavior now (as in all following Playing sections). While you might get lost and search online, try your best to get new ideas and all, don't forget one reference: this workshop. It's not finished, far from it. You might have later one some useful tip to make your behavior even better!
- 
-Our aim is to start a new genre of gaming, so no better time than now. Once your AI coded make it combat another AI by charging it and instantiating associated robots. My goodness, can one really do that? Yes we can, and it's covered [here](./ref_setup.html#ais).
-
-You have know all the basic tools at hand to play this racing game. For circuits, you can have a look at all provided. Don't hesitate to create your own by drawing over the background picture with your favorite image editor. How to add it up and modify the size of the arena up? All told in your favorite [reference material](.//ref_setup.html#arena)!. Create the best AI to follow the track, modify on the fly its behavior would the line be long or very sneaky, keep in memory the places where you can go full speed and much much more to get the best time lap.
