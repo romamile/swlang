@@ -41,9 +41,8 @@ sudo apt update && sudo apt upgrade
 
 Run the next command to download ARGoS, a configuration file, and a floor image:
 ```bash
-wget 'https://github.com/OpenTechSchool-Brussels/AI-for-robots-and-swarms/raw/refs/heads/gh-pages/assets/argos3_b59.deb'
-wget 'https://github.com/OpenTechSchool-Brussels/AI-for-robots-and-swarms/raw/refs/heads/gh-pages/assets/configTest.argos'
-wget 'https://github.com/OpenTechSchool-Brussels/AI-for-robots-and-swarms/raw/refs/heads/gh-pages/assets/floor.png'
+wget 'https://github.com/romamile/swarmworkshop/raw/refs/heads/gh-pages/assets/install/argos_install.tar.gz'
+tar -xzf argos_install.tar.gz
 ```
 
 And this one to install it (press Y and then enter when asked to do so):
@@ -58,7 +57,7 @@ argos3 -c configTest.argos
 Here, **argos3** is the name of the software, **-c** is what is called a flag, here meaning you will feed it a configuration file, and **configTest.argos** is the configuration file of the experiment we want to run here)
 
 You should see two windows appearing. One with an arena, a painted floor and robots (where you are meant to run the experiment); and another one with a text editor (where you are meant to code the behavior of the robots).
-If you see both things, congrats, you’re ready for the workshop! You can explore on the left the current version of the tutorial (update coming begining Nov 2025), in order to understand a bit better how to code the robot, and have a bit of experience. This will be very welcomed for the workshop, as you will be able to focus on the linguistic aspect of the behavior.
+If you see both things, congrats, you’re ready for the workshop! You are now free to explore the different log on the left, and learn about artificial behaviors.
 
 
 
