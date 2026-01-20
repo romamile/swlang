@@ -8,7 +8,7 @@ Interstingly, once life appeared, it took ages for navigation to be (if not solv
 
 <img src="./assets/images/epuck_1.jpg" alt="picture of the epuck2" style="height:300px; float:right; margin:1em;">
 
-## a) One robot, two wheels, three ways to navigate
+## One robot, two wheels, three ways to navigate
 
 The epuck2 has two massive wheels (relative to its small size) equipped with a differential drive, and a metal ball on which he relies for stability. In order to move your robot, you set the speed of each of those wheels. For that we use the `robot.wheels.set_velocity(leftSpeed, rightSpeed)` function which accept two values (left and right speed) as parameters, both measured in cm/s. Positive values make the wheels roll forward, negative make them roll backward. For instance, to go straight:
 
@@ -24,11 +24,7 @@ This is the bare metal way of controlling your robot, we will see bellow better 
 * turning continously right is *leftSpeed > rightSpeed*. Try `robot.wheels.set_velocity(10,20)`.
 * turning on your self is *leftSpeed = -rightSpeed*. Try `robot.wheels.set_velocity(20,-20)`.
 
-While your moving is aimless for now, you can already create simple behviors, such your robot path forming simple shapes. Try to draw a triangle for instance with its movement. To do so, you might want to create a global variable that is incremented by 1 at the beginning of the function **step**, measuring time elapsing. Once you do that, every N ticks, change the speed of the wheels.
-
-for instance (while circle are pretty straight forward, try to draw triangles or more complex shapes!).
-
-By the way, here we told that the code must go in the step function (usually the case). It'll be up to you usually to understand where to put the code (not too complex, I assure you) so you'll need to think if the code is meant to be executed once (in `inti()`) or constantly (in `step()`).
+While your moving is aimless for now, you can already create simple behaviors, like making them form specific shapes as they move. Try to draw a triangle. To do so, you might want to create a global variable that is incremented by 1 at the beginning of the function **step**, measuring time elapsing. Once you do that, every N ticks, turn, and move forward.
 
 While setting directly the wheels' speed does the job, it's not really practical. If the robots think it terms of left and right speed, we don't really. We would be more used to think in terms of moving forward/backward and turning, like when driving a car. So, we want to feed the robot forward speed and an angular speed, and it to translate it to left wheel speed and right wheel speed. Any idea? Try to imagine if you have only forward or angular, and then compose the two of them. Below are a possible solution, don't look at it before you've tried out a little bit by yourself! To make it easier to use, we formalized it as a function. A good time if ever to see how they are coded in Lua!
 

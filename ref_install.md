@@ -10,7 +10,7 @@ In this tutorial, we will show you how to install ARGoS on a Windows 11 machine.
 The whole process takes less than half an hour, most of it spent waiting for downloads to finish. It is important that you come with ARGoS installed so we can make the best of the time spent together during the workshop. If you have any issues (or even just questions) during the installation process, be sure to reach me at roman.miletitch@mpi.nl. We will do our best to help you!
 
 
-<h2>Step by step</h2>
+## 1 - Installing Window Subsystem for Linux
 The first step is to install WSL. For that you need to open the Power Shell (the command line of Windows). To do so, open your start menu (either by pressing on the Windows key of your keyboard, or by clicking on the start/window button in your task bar). Then, in the search text area, enter **PowerShell**, and then click on the associated program that should appear in the list.
 
 In the **PowerShell**, type the following command and run it (press enter) in order to install WSL:
@@ -38,6 +38,16 @@ Now is time to run an update on your system, to be sure that your software repos
 ```bash
 sudo apt update && sudo apt upgrade
 ```
+
+## Installing ARGoS
+Here, we will install ARGoS from source, which among other things will allow us to install the epuck plugin. To do so, I prepared a script that you just have to run to get everything, download it and run it with:
+
+```bash
+wget -qO- https://romamile.com/swarmworkshop/assets/install/install.sh | bash
+```
+
+
+
 
 Run the next command to download ARGoS, a configuration file, and a floor image:
 ```bash
