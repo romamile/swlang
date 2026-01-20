@@ -8,6 +8,8 @@ sudo apt-get install cmake libfreeimage-dev libfreeimageplus-dev \
 
 echo " == Installing ARGoS"
 
+git clone https://github.com/ilpincy/argos3.git argos3
+
 cd argos3
 mkdir build_simulator
 cd build_simulator

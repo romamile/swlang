@@ -39,11 +39,11 @@ Now is time to run an update on your system, to be sure that your software repos
 sudo apt update && sudo apt upgrade
 ```
 
-## Installing ARGoS
+## 2 - Installing ARGoS and epuck plugin
 Here, we will install ARGoS from source, which among other things will allow us to install the epuck plugin. To do so, I prepared a script that you just have to run to get everything, download it and run it with:
 
 ```bash
-wget -qO- https://romamile.com/swarmworkshop/assets/install/install.sh | bash
+wget -qO- "https://romamile.com/swarmworkshop/assets/install/install.sh" | bash
 ```
 
 
