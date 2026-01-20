@@ -17,6 +17,11 @@ cmake ../src
 make
 
 
+# installation
+make doc           # documentation is required!
+sudo make install
+
+
 echo " == Installing epuck plugin"
 
 git clone https://github.com/demiurge-project/argos3-epuck argos3-epuck
@@ -26,4 +31,6 @@ mkdir build
 cd build
 cmake ../src
 make
+
+# installation
 sudo make install
