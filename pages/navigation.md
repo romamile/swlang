@@ -10,7 +10,7 @@ Interstingly, once life appeared, it took ages for navigation to be (if not solv
 
 ## One robot, two wheels, three ways to navigate
 
-The epuck2 has two massive wheels (relative to its small size) equipped with a differential drive, and a metal ball on which he relies for stability. In order to move your robot, you set the speed of each of those wheels. For that we use the `robot.wheels.set_velocity(leftSpeed, rightSpeed)` function which accept two values (left and right speed) as parameters, both measured in cm/s. Positive values make the wheels roll forward, negative make them roll backward. For instance, to go straight:
+The epuck2 has two massive wheels (relative to its small size) equipped with a differential drive. In order to move your robot, you set the speed of each of those wheels. For that we use the `robot.wheels.set_velocity(leftSpeed, rightSpeed)` function which accept two values (left and right speed) as parameters, both measured in cm/s. Positive values make the wheels roll forward, negative make them roll backward. For instance, to go straight:
 
 ```lua
 -- You will most of the time modify the step function
