@@ -2,7 +2,7 @@
 
 echo " == Installing packages"
 sudo apt-get install cmake libfreeimage-dev libfreeimageplus-dev \
-  qt5-default freeglut3-dev libxi-dev libxmu-dev liblua5.3-dev \
+  freeglut3-dev libxi-dev libxmu-dev liblua5.3-dev \
   lua5.3 doxygen graphviz libgraphviz-dev asciidoc
 
 
@@ -23,7 +23,7 @@ sudo make install
 
 
 echo " == Installing epuck plugin"
-
+cd ../..
 git clone https://github.com/demiurge-project/argos3-epuck argos3-epuck
 
 cd argos3-epuck
@@ -34,3 +34,8 @@ make
 
 # installation
 sudo make install
+
+
+# Downloading assets
+wget https://romamile.com/swarmworkshop/assets/install/floor.png
+wget https://romamile.com/swarmworkshop/assets/install/install.shconfigTest.argos

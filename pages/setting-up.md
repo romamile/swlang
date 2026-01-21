@@ -9,15 +9,17 @@ As mentioned in the introduction, in order to simulate both our robots and their
 
 In order to run an experiment in ARGoS, you need three things:
 
-* the code for the behavior of the robot(s),  either in C++ or in Lua;
-* the environment code (optional, and only in C++), either to update the environment (e.g., adding and moving objects) or to add a visualization layer (very practical for debugging);
-* the .argos (XML format) file describing the experimental conditions, in particular, what robot code and environment code to use, and a description of the arena and robots.
+* a **controller** - the code for the behavior of the robot(s),  either in C++ or in Lua;
+* a **loop function** - the environment code (optional, and only in C++), either to update the environment (e.g., adding and moving objects) or to add a visualization layer (very practical for debugging);
+* a **configuration file** - the .argos (XML format) file describing the experimental conditions, in particular, what robot code and environment code to use, and a description of the arena and robots.
 
-The environment code will be provided, as well as the .argos file. While we don't recommend altering the C++ environment code, you can open the .argos experiment file, and make modifications (number of robots, initial positioning, size of the area... more info about it [here](./ref_setup.html)). That being said, you will focus on the robot's behavior code, and in this workshop you will use the Lua language. While slightly slower, it is easier learn, and iterate with.
+The environment code will be provided, as well as the .argos file. While we don't recommend altering the C++ environment code, you can open the .argos experiment file, and make modifications (number of robots, initial positioning, size of the area...). That being said, you will focus on the robot's controller, and in this workshop you will use the Lua language. While slightly slower, it is easier learn, and iterate with.
 
 
 ### Setting Up ARGoS & Lua
-ARGoS is developed for Linux first, but can also be installed on Mac and Windows. For Linux and Mac, please go [here](http://www.argos-sim.info/core.php). For windows, please go [here](./ref_install.html). If instead, for any particular reasons, you prefere to install it from source, or are curious to have a look at the source code, ARGoS is hosted on github [here](https://github.com/ilpincy/argos3/).
+ARGoS is developed for Linux first, but can also be installed on Mac and Windows. We will install ARGoS from source, which is a bit more tedious, but allow us to use the epuck robot, that we are currently using in research, and that will be 
+
+For Linux and Mac, please go [here](http://www.argos-sim.info/core.php). For windows, please go [here](./ref_install.html). If instead, for any particular reasons, you prefere to install it from source, or are curious to have a look at the source code, ARGoS is hosted on github [here](https://github.com/ilpincy/argos3/).
 
 In order to check if ARGoS is well installed, just run `argos3 --version` in your favorite command line, and a green text should appear with the version name of currently installed ARGoS. If you are curious about all the possibilities of ARGos, run `argos3 -q all` in the command line, it will returns you all the module that are installed. To learn more about a specific module, you can then run `argos3 -q *name-of-the-module*`.
 

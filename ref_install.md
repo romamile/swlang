@@ -40,26 +40,17 @@ sudo apt update && sudo apt upgrade
 ```
 
 ## 2 - Installing ARGoS and epuck plugin
-Here, we will install ARGoS from source, which among other things will allow us to install the epuck plugin. To do so, I prepared a script that you just have to run to get everything, download it and run it with:
+Here, we will install ARGoS from source, which among other things will allow us to install the epuck plugin. To do so, I prepared a script that you just have to run to get everything. It will access two github repositories (ARGoS and epuck), clone them localy, compile the code, and install it. To do so, create a new directory (here named *argos_workshop*, but you decide!) and then download and run the script:
 
 ```bash
+mkdir argos_workshop
+cd argos_workshop
 wget -qO- "https://romamile.com/swarmworkshop/assets/install/install.sh" | bash
 ```
 
+This will take some time, but should work fine!
 
-
-
-Run the next command to download ARGoS, a configuration file, and a floor image:
-```bash
-wget 'https://romamile.com/swarmworkshop/assets/install/argos_install.tar.gz'
-tar -xzf argos_install.tar.gz
-```
-
-And this one to install it (press Y and then enter when asked to do so):
-```bash
-sudo apt install ./argos3_b59.deb
-``` 
-You can now test out ARGoS with the following command:
+You can now test out ARGoS with the following command, from within your current working directory:
 ```bash
 argos3 -c configTest.argos
 ```
@@ -71,7 +62,7 @@ If you see both things, congrats, you’re ready for the workshop! You are now f
 
 
 
-<h2>Troubleshooting</h2>
+## Troubleshooting
 If when trying to run ARGoS you see a red error message, please run the following commands, one by one:
 
 ```bash
