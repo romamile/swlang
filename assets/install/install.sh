@@ -38,5 +38,6 @@ sudo make install
 
 
 # Downloading assets
+cd ../..
 wget https://romamile.com/swarmworkshop/assets/install/floor.png
-wget https://romamile.com/swarmworkshop/assets/install/install.shconfigTest.argos
+wget https://romamile.com/swarmworkshop/assets/install/configTest.argos
