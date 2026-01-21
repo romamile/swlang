@@ -32,4 +32,10 @@ Last, we run an update on your system, to be sure that your software repository 
 sudo apt update && sudo apt upgrade
 ```
 
+One important thing to keep in mind, everytime you login to your system, you need to change your running directory, and to go to your home (your own starting directory). To do so, just run:
+
+```bash
+cd ~
+```
+
 And now you are done. Please go back to the [setting up page](./pages/setting-up.html) to continue with the instalation process.
