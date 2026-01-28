@@ -21,7 +21,7 @@ ARGoS is developed for Linux first, but can also be installed on Mac and Windows
 
 If you are on Windows, please first go [here](./ref_win.html) in order to install WSL (Windows Subsystem for Linux) and then continue the installation as follow. On Mac, you can install all of the necessary requirements using [HomeBrew](https://brew.sh). In the command line, type the following command: `brew install pkg-config cmake libpng freeimage lua qt docbook asciidoc graphviz doxygen` and then continue the installation as follow. If you run into any specific trouble, be sure to contact the organisers.
 
-In order to simplify the installation process (that you can see [here](https://github.com/ilpincy/argos3) for ARGoS, and [here](https://github.com/demiurge-project/argos3-epuck) for the epuck plugin), you can instead just run a script we prepared for you. It accesses the two github repositories (ARGoS and epuck), clone them localy, compile the code, and install it. To do so, create a new directory (here named *argos_workshop*, but you decide!) and then download and run the script:
+For a generic version of the instalation process, you can refer [here](https://github.com/ilpincy/argos3) for ARGoS, and [here](https://github.com/demiurge-project/argos3-epuck) for the epuck plugin. In order to simplify the process, in case you are on a Debian/Ubuntu system, you can instead just run a script we prepared for you. It accesses the two github repositories (ARGoS and epuck), clone them localy, compile the code, and install it. To do so, create a new directory (here named *argos_workshop*, but you decide!) and then download and run the script:
 
 ```bash
 mkdir argos_workshop
