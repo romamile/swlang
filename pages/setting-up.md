@@ -26,7 +26,7 @@ In order to simplify the installation process (that you can see [here](https://g
 ```bash
 mkdir argos_workshop
 cd argos_workshop
-wget -qO- "https://romamile.com/swarmworkshop/assets/install/install.sh" | bash
+wget -qO- "https://romamile.com/swlang/assets/install/install.sh" | bash
 ```
 
 This will take some time, but should work fine!
